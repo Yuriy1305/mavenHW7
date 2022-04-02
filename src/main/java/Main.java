@@ -40,7 +40,8 @@ import javax.json.JsonReader;
                         JsonReader jsonReader = Json.createReader(forecastJsonReader);
                         JsonObject weatherResponseJson = jsonReader.readObject();
 // отправляем на разбор и вывод в нужной форме:
-                        WeatherResponse weatherResponse = new WeatherResponse(weatherResponseJson);
+                        WeatherResponse weatherResponse =
+                                new WeatherResponse(weatherResponseJson);
 
                     } catch (IOException e) {
                         System.out.println("Ошибка1: " + e.getMessage());
