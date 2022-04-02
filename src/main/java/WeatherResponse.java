@@ -7,6 +7,7 @@ public class WeatherResponse {
     private double maximumTemperature;
     private String dayTextDescription;
     private String nightTextDescription;
+    
 // немного сократил и упростил для своего понимания:
     public WeatherResponse(JsonObject jsonObject) {
         System.out.println("Погода на 5 дней в городе Saint Petersburg:");
